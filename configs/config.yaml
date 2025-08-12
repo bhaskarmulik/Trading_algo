@@ -1,0 +1,22 @@
+data:
+  symbols: ["TATAMOTORS.NS", "ADANIENT.NS", "SBIN.NS"]
+  interval: "1d"           
+  lookback_months: 120       
+  backtest_months: 6
+strategy:
+  rsi_period: 14
+  short_dma: 20
+  long_dma: 50
+  rsi_buy_threshold: 30
+ml:
+  enabled: true
+  features: ["RSI", "DMA_S", "DMA_L", "DMA_CROSS_UP"]
+  model_type: "logistic"   # 'logistic' / 'tree'
+  random_state: 42
+sheets:
+  enabled: true
+  sheet_name_env: "GSPREAD_SHEET_NAME"
+alerts:
+  enabled: true
+runner:
+  schedule_cron: null 

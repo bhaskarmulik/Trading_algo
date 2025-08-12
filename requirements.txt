@@ -1,0 +1,12 @@
+pandas==2.2.2
+numpy==1.26.4
+yfinance==0.2.43
+ta==0.11.0
+scikit-learn==1.5.1
+matplotlib==3.9.0
+python-dotenv==1.0.1
+gspread==6.1.2
+google-auth==2.31.0
+APScheduler==3.10.4
+python-telegram-bot==21.4
+loguru==0.7.2
